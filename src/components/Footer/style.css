@@ -7,14 +7,13 @@ footer {
   padding: 4rem;
 }
 
-footer .social {
-  color: #f60;
-  display: flex;
-  gap: 2rem;
+footer .social a {
+  color: var(--white);
   cursor: pointer;
+  margin: 0 1rem;
 }
 
 footer .social svg:hover {
-  color: var(--orange-ligth);
+  color: var(--orange);
   transition: all 0.3s;
 }
