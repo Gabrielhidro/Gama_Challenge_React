@@ -64,6 +64,10 @@
   margin: 0 auto;
 }
 
+.form-section .form-container form button:hover {
+  filter: opacity(0.9);
+}
+
 .form-section .form-container form p {
   color: var(--dark);
   font-weight: 700;

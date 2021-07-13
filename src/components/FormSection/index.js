@@ -1,14 +1,31 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Animation from '../../images/animation.json'
 import Lottie from 'react-lottie'
 import './style.css'
 
 
 const FormSection = () => {
+  const [ name, setName ] = useState("");
+  const [ email, setEmail ] = useState("");
+  const [ checked, setChecked ] = useState(false);
+
   const defaultOptions  = {
     loop: true,
     autoplay: true,
     animationData: Animation
+  }
+
+  function handleSubmit(e){
+    e.preventDefault();
+    const dataArray = [name, email]
+    if (checked){
+      localStorage.setItem("dataKey", JSON.stringify(dataArray));
+      alert('Nome e E-mail salvos no LocalStorage!')
+      return
+    }
+    
+    setName("")
+    setEmail("")
   }
 
   return (
@@ -16,16 +33,20 @@ const FormSection = () => {
       <h1>Receba seu cupom de desconto</h1>
       <div className="form-container">
         <Lottie options={defaultOptions} width={300}/>
-        <form>
+        <form onSubmit={handleSubmit}>
           <h1>Cadastro</h1>
-          <input type="text" placeholder="Nome*" required={true}/>
-          <input type="email" placeholder="Email*" required={true}/>
+          <input onChange={(e) => setName(e.target.value)} value={name} type="text" placeholder="Nome*" required={true}/>
+          <input onChange={(e) => setEmail(e.target.value)} value={email} type="email" placeholder="Email*" required={true}/>
           <p>Termos e condições:</p>
           <div className="form-check">
-            <input type="checkbox" />
+            <input value={checked} onChange={() => setChecked(!checked)} type="checkbox" />
             <label htmlFor="">Aceito receber emails referente as promoções da Gamma-commerce</label>
           </div>
-          <button className="btn-form">Cadastrar</button>
+          {checked ? 
+          (<button id="btn" type="submit" className="btn-form">Cadastrar</button>)
+           : 
+          (<button id="btn" type="submit" className="btn-form" disabled>Cadastrar</button>)
+          }
         </form>
       </div>
     </section>
