@@ -1,0 +1,29 @@
+.main-content {
+  width: 100%;
+  background: var(--dark-medium);
+  padding-top: 103.03px;
+}
+
+.main-content-text {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.main-content-text h1 {
+  text-align: center;
+  font-size: 3.2rem;
+  color: var(--orange-ligth);
+  margin: 2rem 0;
+}
+
+.main-content-text h2 {
+  text-align: justify;
+  font-size: 2.2rem;
+  padding-bottom: 2rem;
+  line-height: 3rem;
+}
+
+.main-content-text h2 span {
+  color: var(--orange-ligth);
+  font-size: 2.2rem;
+}

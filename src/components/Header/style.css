@@ -1,5 +1,8 @@
 header {
   box-shadow: 0px 0px 20px 0px var(--orange);
+  position: fixed;
+  width: 100%;
+  background: var(--dark);
 }
 
 .header-content {
@@ -8,11 +11,11 @@ header {
   align-items: center;
   width: 80%;
   margin: 0 auto;
-  padding: 0.5rem 0;
+  padding: 2rem 0;
 }
 
 .logo {
-  width: 10rem;
+  width: 15rem;
 }
 
 .button-lead {
