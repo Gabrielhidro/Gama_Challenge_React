@@ -1,0 +1,30 @@
+.cards-section {
+  width: 80%;
+  margin: 4rem auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 4rem;
+}
+
+.card {
+  width: 100%;
+  height: 33rem;
+  border: 1px solid var(--orange);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.card h1 {
+  font-size: 20rem;
+  font-weight: 900;
+  color: var(--orange);
+}
+
+.card p {
+  text-align: center;
+  padding: 0 2rem 2rem 2rem;
+  font-weight: 700;
+}
