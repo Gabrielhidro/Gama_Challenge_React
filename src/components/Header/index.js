@@ -1,5 +1,6 @@
 import React from 'react'
 import logo from '../../images/gama_logo.png'
+import { Link, animateScroll as scroll } from "react-scroll";
 import './style.css'
 
 const Header = () => {
@@ -7,7 +8,7 @@ const Header = () => {
     <header>
       <div className="header-content">
         <img className="logo" src={logo} alt="" />
-        <button className="button-lead" type="button">Cadastre-se</button>
+        <Link to="form" smooth={true}><button href="#form" className="button-lead" type="button">Cadastre-se</button></Link>
       </div>
     </header>
   )

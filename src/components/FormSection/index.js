@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import Animation from "../../images/animation.json";
 import Lottie from "react-lottie";
-import { ToastContainer, toast } from "react-toastify";
+import { toast } from "react-toastify";
+import { Link, animateScroll as scroll } from "react-scroll";
 import "./style.css";
 
 const FormSection = () => {
@@ -32,7 +33,7 @@ const FormSection = () => {
       <h1>Receba seu cupom de desconto</h1>
       <div className="form-container">
         <Lottie options={defaultOptions} width={300} />
-        <form onSubmit={handleSubmit}>
+        <form id="form" onSubmit={handleSubmit}>
           <h1>Cadastro</h1>
           <input
             onChange={(e) => setName(e.target.value)}
