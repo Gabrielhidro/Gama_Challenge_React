@@ -32,4 +32,5 @@ img {
 
 #btn[disabled] {
   cursor: not-allowed;
+  filter: brightness(0.5);
 }

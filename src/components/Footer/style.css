@@ -17,3 +17,13 @@ footer .social svg:hover {
   color: var(--orange);
   transition: all 0.3s;
 }
+
+@media (max-width: 720px) {
+  .social svg {
+    width: 3.3rem;
+  }
+
+  footer h3 {
+    font-size: 1.34rem;
+  }
+}

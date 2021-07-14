@@ -28,3 +28,10 @@
   padding: 0 2rem 2rem 2rem;
   font-weight: 700;
 }
+
+@media (max-width: 720px) {
+  .cards-section {
+    display: flex;
+    flex-direction: column;
+  }
+}

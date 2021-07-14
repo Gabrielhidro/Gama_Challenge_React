@@ -32,3 +32,25 @@ header {
 .button-lead:hover {
   filter: brightness(0.8);
 }
+
+@media (max-width: 720px) {
+  header {
+    position: relative;
+    padding: 2rem;
+  }
+
+  .header-content {
+    width: 100%;
+    display: inline;
+  }
+
+  .header-content img {
+    margin: 0 auto;
+    padding-bottom: 2rem;
+    width: 13rem;
+  }
+
+  .button-lead {
+    width: 100%;
+  }
+}

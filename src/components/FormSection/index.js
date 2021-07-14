@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import Animation from "../../images/animation.json";
 import Lottie from "react-lottie";
 import { toast } from "react-toastify";
-import { Link, animateScroll as scroll } from "react-scroll";
 import "./style.css";
 
 const FormSection = () => {

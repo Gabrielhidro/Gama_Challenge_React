@@ -32,3 +32,14 @@
   color: var(--orange-ligth);
   font-size: 2.2rem;
 }
+
+@media (max-width: 720px) {
+  .main-content {
+    padding-top: 4rem;
+  }
+
+  .main-content-text h2 {
+    text-align: center;
+    font-size: 1.8rem;
+  }
+}
