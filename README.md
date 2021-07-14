@@ -1,3 +1,32 @@
+# 1° Desafio técnico do programa Hiring Coders!
+
+### Tecnologias e Bibliotecas Utilizadas:
+
+- React;
+- CSS;
+- Lottie;
+- Toastify;
+- React Icons.
+
+#  Instruções do desafio
+
+Criar um sistema de e-commerce para cadastro de email na landing page para recebimento de novidades e promoções.
+- Template do site oficial 
+- Landing page de promoções, estilo black friday; 
+- Cadastre seu e-mail para receber promoções 
+- Dados no localstorage
+- Hospedar no Netlify
+
+# Sobre a aplicação:
+
+- Está totalmente responsiva (Capaz de se adaptar a diferentes tipos de telas);
+- Dados Salvos no LocalStorage;
+- Hospedada nno Netlify;
+
+
+
+________________________________________________________________________________________________________________________________________________________
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
