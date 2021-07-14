@@ -24,6 +24,7 @@ Criar um sistema de e-commerce para cadastro de email na landing page para receb
 - Hospedada nno Netlify;
 
 
+![gif da aplicação](https://github.com/Gabrielhidro/Gama_Challenge_React/blob/main/Gamma-commerce.gif)
 
 ________________________________________________________________________________________________________________________________________________________
 
